@@ -241,8 +241,7 @@ def discriminative_guided_warp(x, labels, batch_size=6, slope_constraint="symmet
     # use verbose = -1 to turn off warnings
     # slope_constraint is for DTW. "symmetric" or "asymmetric"
     # dtw_type is for shapeDTW or DTW. "normal" or "shape"
-    
-    import utils.dtw as dtw
+
     
     if use_window:
         window = np.ceil(x.shape[1] / 10.).astype(int)
